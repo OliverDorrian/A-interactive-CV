@@ -1,2 +1,2 @@
-# Hello! Welcome to the github of my CV
-It is hosted staticly within github page, feel free to check it out!
+# Hello! Welcome to the GitHub of my CV
+It is hosted statically within GitHub page, feel free to check it out!
