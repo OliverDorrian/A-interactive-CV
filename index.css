@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@100&display=swap');
 
 body{
     margin: 0;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Noto Sans Display', sans-serif;
 }
 
 :root{
@@ -22,6 +22,7 @@ body{
     width: 100%;
     display: flex;
     flex-direction: row;
+
 }
 
 #photoBox{
@@ -29,27 +30,27 @@ body{
     width: 50%;
     background-color: var(--yaleBlue);
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
-#box{
-    position: absolute;
-    background-color: var(--frost);
-    left: 0;
-    top:0;
-    width: 50%;
-    height: 50%;
-    z-index: 1;
+#photoBoxText{
+    background-color: var(--lightGrey);
+    box-shadow: var(--alliceBlue) 5px -5px,
+    var(--lapiz) 10px -10px,
+    var(--alliceBlue) 15px -15px,
+    var(--frost) 20px -20px;
+
+    padding: 1rem;
 }
 
 #photoBox img{
-    box-shadow: var(--lightGrey) 10px 10px,
-    var(--independence) 15px 15px;
-    position: absolute;
-    z-index: 2;
+    box-shadow: var(--alliceBlue) 5px -5px,
+    var(--lapiz) 10px -10px,
+    var(--alliceBlue) 15px -15px,
+    var(--frost) 20px -20px;
     height: 70%;
-    width: auto;
+    left: 5%;
     width: auto;
     max-width: 50%;
     max-height: 100%;
@@ -61,6 +62,7 @@ body{
 }
 
 #footer{
+    font-family: 'Lato', sans-serif;
     color: white;
     width: 100%;
     background-color: var(--independence);
