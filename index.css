@@ -7,32 +7,74 @@ body{
 }
 
 :root{
-    --eggshell: #F4F1DE;
-    --terraCotta: #E07A5F;
+    --alliceBlue: #E7ECEF;
+    --yaleBlue: #274C77;
+    --lapiz: #365F88;
+    --frost: #6096BA;
+    --blueEye: #A3CEF1;
+    --lightGrey: #97ADBD;
+    --grey: #8B8C89;
     --independence: #3D405B;
-    --greenShade: #81B29A;
-    --deepChampagne: #F2CC8F;
-    --blackCoral: #4E5D6B;
 }
 
+#Landing{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
 
+#photoBox{
+    position: relative;
+    width: 50%;
+    background-color: var(--yaleBlue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#box{
+    position: absolute;
+    background-color: var(--frost);
+    left: 0;
+    top:0;
+    width: 50%;
+    height: 50%;
+    z-index: 1;
+}
+
+#photoBox img{
+    box-shadow: var(--lightGrey) 10px 10px,
+    var(--independence) 15px 15px;
+    position: absolute;
+    z-index: 2;
+    height: 70%;
+    width: auto;
+    width: auto;
+    max-width: 50%;
+    max-height: 100%;
+}
+
+#langBox{
+    width: 50%;
+    background-color: var(--blueEye);
+}
 
 #footer{
-    color: var(--eggshell);
-    width:  100%;
+    color: white;
+    width: 100%;
     background-color: var(--independence);
 
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    padding: 1em;
+    padding-top:0.5em;
+    padding-bottom: 0.5em;
 }
 
 #footer > * {
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;    border-radius: 10px;
-    background-color: var(--blackCoral);
-    font-size: 0.7rem;
+    font-size: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -40,7 +82,13 @@ body{
     padding: 1em;
 }
 
+#footer img{
+    height: 2rem;
+
+    margin: auto;
+}
+
 #footer h1{
-    font-size: 1.2rem;
+    font-size: 2rem;
     text-decoration: underline;
 }
