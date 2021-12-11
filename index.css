@@ -1,71 +1,135 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
 
 body{
     margin: 0;
-    font-family: 'Noto Sans Display', sans-serif;
+    font-family: 'Source Code Pro', monospace;
 }
 
 :root{
-    --alliceBlue: #E7ECEF;
-    --yaleBlue: #274C77;
-    --lapiz: #365F88;
-    --frost: #6096BA;
-    --blueEye: #A3CEF1;
-    --lightGrey: #97ADBD;
-    --grey: #8B8C89;
-    --independence: #3D405B;
+    font-family: 'Source Code Pro', monospace;
+    --yellow: #393d42;
+    --redish: #F76C6C;
+    --lightBlue: #A8D0E6;
+    --blue: #374785;
+    --fullblue: #24305E;
 }
 
-#Landing{
+#landing{
+    position: relative;
+    background-image: url("landImg1.jpg");
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#landingText{
+    box-shadow: black 15px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#titleText{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#titleTextLeftBox{
+    width: 50%;
+    background: var(--blue);
+}
+
+#titleTextLeft{
+    color: #F76C6C;
+    text-align: center;
+    font-size: 3em;
+}
+
+#titleTextRightBox{
+    background: var(--fullblue);
+    width: 50%;
+}
+
+#titleTextRight{
+    color: white;
+    text-align: center;
+    font-size: 3em;
+}
+
+#nav{
+    background: #F76C6C;
+    height: 10vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1em;
+
+    color: black;
+    text-decoration: underline;
+}
+
+#nav p{
+    font-size: 1.5em;
+    padding: 1.5em;
+}
+
+#nav h1 {
+    font-size: 2em;
+    padding: 1.5em;
+}
+
+
+#langLeft{
     height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: row;
-
+    flex-wrap: wrap;
 }
 
 #photoBox{
     position: relative;
-    width: 50%;
-    background-color: var(--yaleBlue);
+    width: 30%;
+    background-color: var(--redish);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-#photoBoxText{
-    background-color: var(--lightGrey);
-    box-shadow: var(--alliceBlue) 5px -5px,
-    var(--lapiz) 10px -10px,
-    var(--alliceBlue) 15px -15px,
-    var(--frost) 20px -20px;
-
-    padding: 1rem;
-}
-
-#photoBox img{
-    box-shadow: var(--alliceBlue) 5px -5px,
-    var(--lapiz) 10px -10px,
-    var(--alliceBlue) 15px -15px,
-    var(--frost) 20px -20px;
+#portrait{
+    box-shadow: black 10px 10px;
     height: 70%;
     left: 5%;
     width: auto;
-    max-width: 50%;
+    max-width: 80%;
     max-height: 100%;
 }
 
+
 #langBox{
-    width: 50%;
-    background-color: var(--blueEye);
+    width: 70%;
+    background-color: var(--fullblue);
 }
 
 #footer{
     font-family: 'Lato', sans-serif;
     color: white;
     width: 100%;
-    background-color: var(--independence);
+    background-color: var(--blue);
 
     display: flex;
     flex-direction: row;
@@ -86,7 +150,6 @@ body{
 
 #footer img{
     height: 2rem;
-
     margin: auto;
 }
 
