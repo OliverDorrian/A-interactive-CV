@@ -28,6 +28,30 @@ body{
     justify-content: center;
 }
 
+#arrowBox{
+    position: absolute;
+    bottom: 0;
+    left: 46%;
+    z-index: 10;
+    width: 15%;
+    height: 15%;
+
+    animation: jumpUpDown 1s infinite alternate;
+}
+
+@keyframes jumpUpDown {
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(20px);
+    }
+}
+
+#arrow{
+    max-width: 100%;
+    max-height: 100%;
+}
 
 #landingText{
     box-shadow: black 15px 15px;
@@ -41,7 +65,7 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 100%;
 }
 
@@ -89,9 +113,14 @@ body{
 
 #nav h1 {
     font-size: 2em;
-    padding: 1.5em;
+    padding: 1em;
 }
 
+
+#nav > *:hover{
+    background: black;
+    color: #F76C6C;
+}
 
 #langLeft{
     height: 100vh;
