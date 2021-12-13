@@ -21,7 +21,7 @@ body{
 
 #landing{
     position: relative;
-    background-image: url("landImg1.jpg");
+    background-image: url("assets/landImg1.jpg");
     width: 100%;
     height: 100vh;
 
