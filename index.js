@@ -7,7 +7,7 @@ window.addEventListener(
         );
         document.body.style.setProperty(
             "--scroll-per",
-            `${(window.pageYOffset / document.body.offsetHeight) * 100}%`
+            `${(window.pageYOffset / document.body.offsetHeight) * 120}%`
         );
     },
     false
