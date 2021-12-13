@@ -31,6 +31,27 @@ body{
     justify-content: center;
 }
 
+.progress {
+    height: 25px;
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    /*width: calc(var(--scroll) * 50%);*/
+    width: var(--scroll-per);
+    z-index: 10;
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #e1dcdc, 0 0 30px #e1dcdc,
+    0 0 40px #f76c6c, 0 0 55px #f76c6c, 0 0 75px #f76c6c;
+}
+
+.progress span {
+    padding: 1rem;
+}
+
 #arrowBox{
     position: absolute;
     bottom: 0;
@@ -232,6 +253,11 @@ body{
     max-height: 15em;
     float: left;
     padding: 3em;
+}
+
+#quail{
+    min-height: 100vh;
+    background: var(--fullblue);
 }
 
 #footer{
