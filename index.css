@@ -8,6 +8,22 @@ body{
     background: var(--fullblue);
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 2vh;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 10px;
+}
+
 :root{
     font-family: 'Source Code Pro', monospace;
     --yellow: #393d42;
@@ -32,7 +48,7 @@ body{
 }
 
 .progress {
-    height: 25px;
+    height: 10px;
     display: flex;
     white-space: nowrap;
     align-items: center;
@@ -196,8 +212,8 @@ body{
 
 #langBox p{
     font-size: 2rem;
-    padding-left: 4em;
-    color: white;
+    padding-left: 2em;
+    color: black;
 }
 
 
@@ -238,7 +254,7 @@ body{
     justify-content: flex-start;
 }
 
-#titleCards .card{
+.card{
     padding: 3em;
     margin: 2em;
     background: white;
@@ -260,8 +276,22 @@ body{
     background: var(--fullblue);
 }
 
+#quail h1{
+    font-size: 3em;
+    padding: 1em;
+    color: white;
+}
+
+#quail h2{
+    font-size: 2em;
+}
+
+#quail li{
+    font-size: 2em;
+}
+
 #footer{
-    height: 50vh;
+
     font-family: 'Lato', sans-serif;
     color: white;
     width: 100%;
@@ -271,8 +301,7 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    padding-top:0.5em;
-    padding-bottom: 0.5em;
+
 }
 
 #footer > * {
