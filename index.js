@@ -71,22 +71,4 @@ sectionTwo.forEach(sec2=>{
 })
 
 
-// Left fade in
-const observer3 = new IntersectionObserver(function (entires, observer) {
-        entires.forEach(entry =>{
-                if (!entry.isIntersecting){
-                        return;
-                }
-                entry.target.classList.remove("noView");
-                entry.target.classList.add("slideLeft");
-                observer.unobserve(entry.target);
-        })
-}, options)
-
-const sectionThree = document.querySelectorAll('.slideL')
-
-sectionThree.forEach(sec3=>{
-        observer3.observe(sec3)
-})
-
 

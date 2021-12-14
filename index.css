@@ -357,7 +357,7 @@ body{
 @keyframes slideLeft {
     0% {
         opacity: 0;
-        transform: translateX(+50%);
+        transform: translateX(+25%);
     }
     100% {
         opacity: 1;
@@ -386,6 +386,7 @@ body{
 
     #langBox{
         width: 100%;
+
         background-color: var(--fullblue);
         display: flex;
         flex-direction: column;
