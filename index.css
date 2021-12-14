@@ -47,6 +47,23 @@ body{
     justify-content: center;
 }
 
+.slideRight{
+    animation: slideRight 2s;
+}
+
+.slideLeft{
+    animation: slideLeft 2s;
+}
+
+.slideIn{
+    animation: slideUp 2s;
+}
+
+
+.noView{
+    visibility: hidden;
+}
+
 .progress {
     height: 10px;
     display: flex;
@@ -77,15 +94,6 @@ body{
     height: 15%;
 
     animation: jumpUpDown 1s infinite alternate;
-}
-
-@keyframes jumpUpDown {
-    0%{
-        transform: translateY(0px);
-    }
-    100%{
-        transform: translateY(20px);
-    }
 }
 
 #arrow{
@@ -321,4 +329,45 @@ body{
 #footer h1{
     font-size: 3rem;
     text-decoration: underline;
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes slideLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes jumpUpDown {
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(20px);
+    }
 }

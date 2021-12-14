@@ -30,3 +30,64 @@ window.addEventListener(
     },
     false
 );
+
+const options = {
+        threshold: 0.5,
+        rootMargin: '-100px'
+};
+
+const observer = new IntersectionObserver(function (entires, observer) {
+        entires.forEach(entry =>{
+                if (!entry.isIntersecting){
+                     return;
+                }
+                entry.target.classList.remove("noView");
+                entry.target.classList.add("slideIn");
+                observer.unobserve(entry.target);
+        })
+}, options)
+
+
+const sectionOne = document.querySelectorAll('.view');
+
+sectionOne.forEach(sec =>{
+        observer.observe(sec);
+})
+//Right fade in
+const observer2 = new IntersectionObserver(function (entires, observer) {
+        entires.forEach(entry =>{
+                if (!entry.isIntersecting){
+                        return;
+                }
+                entry.target.classList.remove("noView");
+                entry.target.classList.add("slideRight");
+                observer.unobserve(entry.target);
+        })
+}, options)
+
+const sectionTwo = document.querySelectorAll('.slideR')
+
+sectionTwo.forEach(sec2=>{
+        observer2.observe(sec2)
+})
+
+
+// Left fade in
+const observer3 = new IntersectionObserver(function (entires, observer) {
+        entires.forEach(entry =>{
+                if (!entry.isIntersecting){
+                        return;
+                }
+                entry.target.classList.remove("noView");
+                entry.target.classList.add("slideLeft");
+                observer.unobserve(entry.target);
+        })
+}, options)
+
+const sectionThree = document.querySelectorAll('.slideL')
+
+sectionThree.forEach(sec3=>{
+        observer3.observe(sec3)
+})
+
+
