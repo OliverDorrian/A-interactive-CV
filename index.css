@@ -374,7 +374,7 @@ body{
     }
 }
 
-@media (max-device-width: 600px){
+@media (max-device-width: 1080px){
     #photoBox{
         position: relative;
         width: 100%;
