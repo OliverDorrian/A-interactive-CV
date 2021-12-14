@@ -33,7 +33,6 @@ window.addEventListener(
 
 const options = {
         threshold: 0.5,
-        rootMargin: '-100px'
 };
 
 const observer = new IntersectionObserver(function (entires, observer) {
