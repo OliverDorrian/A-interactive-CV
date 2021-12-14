@@ -374,7 +374,7 @@ body{
     }
 }
 
-@media screen and (max-width: 600px){
+@media (max-device-width: 600px){
     #photoBox{
         position: relative;
         width: 100%;
@@ -387,7 +387,6 @@ body{
     #langBox{
         width: 100%;
         background-color: var(--fullblue);
-
         display: flex;
         flex-direction: column;
         align-items: baseline;
@@ -396,6 +395,7 @@ body{
     #landing{
         position: relative;
         background-image: url("assets/landImg1.jpg");
+        background-size: cover;
         width: 100%;
         display: flex;
         flex-direction: row;
