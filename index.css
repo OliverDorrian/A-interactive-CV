@@ -121,6 +121,7 @@ body{
 }
 
 #titleTextLeftBox{
+    height: 100%;
     width: 50%;
     background: var(--blue);
 }
@@ -132,6 +133,7 @@ body{
 }
 
 #titleTextRightBox{
+    height: 100%;
     background: var(--fullblue);
     width: 50%;
 }
