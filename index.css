@@ -416,7 +416,102 @@ a{
         align-items: center;
     }
     #nav{
+        font-size: 1em;
+
+        width: 100%;
+        height: inherit;
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+
+
+        color: black;
+        text-decoration: underline;
+    }
+
+    #nav div{
+        color: var(--redish) ;
+        width: 100%;
+        display: block;
+    }
+
+    #titleTextLeftBox{
+        height: 100%;
+        width: 100%;
+        background: var(--blue);
+    }
+
+    #titleTextRightBox{
+        height: 100%;
+
+        background: var(--redish);
+        width: 100%;
+    }
+
+    #titleText{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    #arrowBox{
+        visibility: hidden;
+    }
+
+    #bigText{
         font-size: 1.5em;
+        padding-top: 0.7em;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}
+
+@media (max-device-width: 500px){
+    #photoBox{
+        position: relative;
+        width: 100%;
+        background-color: var(--redish);
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #langBox{
+        width: 100%;
+        background-color: var(--fullblue);
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: left;
+    }
+
+    #landing{
+        position: relative;
+        background-image: url("assets/landImg1.jpg");
+        background-size: cover;
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #landingText{
+        display: flex;
+        width: 80%;
+
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    #nav{
+        font-size: 2em;
 
         width: 100%;
         height: inherit;
