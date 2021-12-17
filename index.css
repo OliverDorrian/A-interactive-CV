@@ -199,10 +199,8 @@ a{
 
 #portrait{
     box-shadow: black 10px 10px;
-    height: 70%;
-    left: 5%;
-    width: auto;
-    max-width: 80%;
+    margin: 0.75em;
+    max-width: 95%;
     max-height: 100%;
 }
 
